@@ -1,8 +1,8 @@
 @extends('layouts.base')
 
-@section('PageContent')
+@section('pageContent')
 
-<h1>{{$comic->title}}</h1>
+<h1>{{$comic["title"]}}</h1>
 <p>{{$comic->description}}</p>
 <img src="{{$comic->thumb}}" alt="{{$comic->title}}">
 <p>Prezzo: {{$comic->price}}</p>
