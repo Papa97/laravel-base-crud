@@ -3,6 +3,9 @@
 @section('pageContent')
 
 <h1>Modifica fumetto {{$comic->title}}</h1>
+<a href="{{route("comics.index")}}">
+    <button type="button" class="btn btn-outline-success mt-3 mb-3">Torna alla Home</button>
+</a>
 
 <form action="{{route("comics.update", $comic->id)}}" method="POST">
     @csrf

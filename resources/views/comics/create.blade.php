@@ -4,6 +4,10 @@
 
 <h1>Aggiungi un nuovo fumetto</h1>
 
+<a href="{{route("comics.index")}}">
+    <button type="button" class="btn btn-outline-success mt-3 mb-3">Torna alla Home</button>
+</a>
+
 <form action="{{route("comics.store")}}" method="POST">
     @csrf
     <div class="form-group">
