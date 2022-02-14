@@ -20,9 +20,7 @@
 
     <div class="form-group">
         <label for="description">Descrizione</label>
-        <textarea class="form-control" id="description" name="description" rows="8" placeholder="Inserisci la descrizione del fumetto">
-            {{old("description") ? old("description") : $comic->description}}
-        </textarea>
+        <textarea class="form-control" id="description" name="description" rows="8" placeholder="Inserisci la descrizione del fumetto">{{old("description") ? old("description") : $comic->description}}</textarea>
         @error('description')
             <div class="alert alert-danger">{{ $message }}</div>
         @enderror

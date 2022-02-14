@@ -9,6 +9,6 @@
 <p>Serie: {{$comic->series}}</p>
 <p>Tipo: {{$comic->type}}</p>
 
+<a href="{{route("comics.edit", $comic->id)}}"><button type="button" class="btn btn-outline-secondary">Modifica questo fumetto</button></a>
 
-{{-- @dd($comic) --}}
 @endsection
