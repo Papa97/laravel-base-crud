@@ -29,7 +29,7 @@
             <td>{{$comic->sale_date}}</td>
             <td>
                 <a href="{{route("comics.show", $comic->id)}}"><button type="button" class="btn btn-outline-primary">Vai al prodotto</button></a>
-                <a href="{{route("comics.edit", $comic->id)}}"><button type="button" class="btn btn-outline-warning">Modifica</button></a>
+                <a href="{{route("comics.edit", $comic->id)}}"><button type="button" class="btn btn-outline-secondary">Modifica</button></a>
                 <form action="{{route("comics.destroy", $comic->id)}}" method="POST">
                   @csrf
                   @method("DELETE")
